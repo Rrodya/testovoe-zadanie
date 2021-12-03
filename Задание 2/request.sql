@@ -15,6 +15,6 @@ FROM (
     GROUP BY Students.StudentId HAVING COUNT(Exams.ExamName) >= 2
 ) AS ten
 INNER JOIN students ON Students.StudentId = ten.StudentId
-GROUP BY students.GroupName HAVING COUNT(students.StudentId) > 2;
+GROUP BY students.GroupName HAVING COUNT(students.StudentId) > 10;
 
 
