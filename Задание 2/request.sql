@@ -1,0 +1,1 @@
+SELECT FirstName, LastName FROM Students, Exams WHERE count(Result < 3) > 2
